@@ -35,7 +35,6 @@ class NeuralNetwork:
         self.Y_t = one_hot.copy()
         self.t_labels = t_labels
 
-
     def softmax(self, x):
         exp_scores = np.exp(x-np.max(x))
         probs = exp_scores / np.sum(exp_scores, axis=1, keepdims=True)
@@ -71,12 +70,15 @@ class NeuralNetwork:
 
         #CROSS ENTROPY DERIVATIVE
         deltaz3 = f_w3 - Y
+        deltaf_w3 = np.dot(deltaz3, self.W3.T)
+
         size = X.shape[0]
 
         if self.two_layers:
-            deltaf_w3 = np.dot(deltaz3, self.W3.T)
+
             deltaz2 = deltaf_w3 * d_w2
             deltaf_w2 = np.dot(deltaz2, self.W2.T)
+
             deltaz1 = deltaf_w2 * d_w1
             grad_w1 = np.dot(X.T, deltaz1)/ size
             grad_w2 = np.dot(f_w1.T, deltaz2)/ size
@@ -84,13 +86,10 @@ class NeuralNetwork:
 
 
         else:
-            deltaf_w3 = np.dot(deltaz3, self.W3.T)
             deltaz2 = deltaf_w3 * d_w2
             grad_w1 = np.dot(X.T, deltaz2)/ size
             grad_w2 = grad_w1
             grad_w3 = np.dot(f_w2.T, deltaz3)/ size
-
-
 
         return grad_w1, grad_w2, grad_w3
 
@@ -111,34 +110,54 @@ class NeuralNetwork:
 
         self.W3 = self.W3 - self.alpha * grad_w3
 
-    def train(self, epochs):
+    def train_batch(self, epochs, batch_size):
 
         idx = np.arange(self.X.shape[0])
-        for i in range(0, epochs):
+        for j in range(0, epochs):
             np.random.shuffle(idx)
             i=0
+            Loss = 0
+            num_batches = 0
             exit_cond = False
-            while(True):
-                if i+8 >= self.X.shape[0]:
-                    exit_cond=True
+            while True:
+                if i+batch_size >= self.X.shape[0]:
+                    exit_cond = True
                     batch = self.X[idx[i:self.X.shape[0]]]
                     batch_l = self.Y[idx[i:self.Y.shape[0]]]
                 else:
-                    batch = self.X[idx[i:i+8]]
-                    batch_l = self.Y[idx[i:i+8]]
-
+                    batch = self.X[idx[i:i+batch_size]]
+                    batch_l = self.Y[idx[i:i+batch_size]]
 
                 f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(batch)
-
-
+                loss = self.calculate_error(f_w3, batch_l)
+                Loss += loss
                 grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, batch, batch_l)
 
                 self.update_weights(grad_w1, grad_w2, grad_w3)
+                i += batch_size
+                num_batches += 1
+                batch=None
+                batch_l=None
+                if exit_cond:
+                    break
 
+            acc = self.calculate_accuracy_test(self.X_t, self.Y_t)
+            print("Epoch: ", j)
+            print("Loss", Loss/num_batches)
+            print("Accuracy: ", acc)
+
+    def train_all(self, epochs):
+
+        for j in range(0, epochs):
+            f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(self.X)
 
             loss = self.calculate_error(f_w3, self.Y)
-            acc = self.calculate_accuracy(self.X_t, self.Y_t)
-            print(loss)
-            print(acc)
-            if exit_cond:
-                break
+            acc = self.calculate_accuracy_test(self.X_t, self.Y_t)
+
+            grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, self.X, self.Y)
+
+            self.update_weights(grad_w1, grad_w2, grad_w3)
+
+            print("Epoch: ", j)
+            print("Loss", loss)
+            print("Accuracy: ", acc)

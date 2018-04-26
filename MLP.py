@@ -10,7 +10,10 @@ train_img, test_img, train_lbl, test_lbl = train_test_split(mnist.data, mnist.ta
 variance = 1
 mu = 0
 two_layers = False
-red = NeuralNetwork(784, 100, 10, 10, 0.0085, train_img.T, train_lbl.T,test_img.T, test_lbl,two_layers, )
-red.train(10000)
+red = NeuralNetwork(784, 100, 10, 10, 0.0085, train_img.T, train_lbl.T,test_img.T, test_lbl,two_layers )
+
+red.train_all(10000)
+
+#red.train(10000, 32)
 
 print("Here")
