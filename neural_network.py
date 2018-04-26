@@ -50,8 +50,8 @@ class NeuralNetwork:
         d_x[d_x>0] = 1
         return f_x, d_x
 
-    def cross_entropy(self, f_w3):
-        loss = 1/f_w3.shape[0] * -np.sum((self.Y * np.log(f_w3)))
+    def cross_entropy(self, f_w3, Y):
+        loss = 1/f_w3.shape[0] * -np.sum((Y * np.log(f_w3)))
         return loss
 
     def calculate_forward(self, X):
@@ -70,18 +70,18 @@ class NeuralNetwork:
 
         return f_w1, f_w2, f_w3, d_w1, d_w2
 
-    def calculate_backward(self, f_w1, f_w2, f_w3, d_w1, d_w2):
+    def calculate_backward(self, f_w1, f_w2, f_w3, d_w1, d_w2, X, Y):
 
         #CROSS ENTROPY DERIVATIVE
-        deltaz3 = f_w3 - self.Y
-        size = self.X.shape[0]
+        deltaz3 = f_w3 - Y
+        size = X.shape[0]
 
         if self.two_layers:
             deltaf_w3 = np.dot(deltaz3, self.W3.T)
             deltaz2 = deltaf_w3 * d_w2
             deltaf_w2 = np.dot(deltaz2, self.W2.T)
             deltaz1 = deltaf_w2 * d_w1
-            grad_w1 = np.dot(self.X.T, deltaz1)/ size
+            grad_w1 = np.dot(X.T, deltaz1)/ size
             grad_w2 = np.dot(f_w1.T, deltaz2)/ size
             grad_w3 = np.dot(f_w2.T, deltaz3)/ size
 
@@ -89,7 +89,7 @@ class NeuralNetwork:
         else:
             deltaf_w3 = np.dot(deltaz3, self.W3.T)
             deltaz2 = deltaf_w3 * d_w2
-            grad_w1 = np.dot(self.X.T, deltaz2)/ size
+            grad_w1 = np.dot(X.T, deltaz2)/ size
             grad_w2 = grad_w1
             grad_w3 = np.dot(f_w2.T, deltaz3)/ size
 
@@ -97,13 +97,13 @@ class NeuralNetwork:
 
         return grad_w1, grad_w2, grad_w3
 
-    def calculate_error(self, f_w3):
-        return self.cross_entropy(f_w3)
+    def calculate_error(self, f_w3, Y):
+        return self.cross_entropy(f_w3, Y)
 
-    def calculate_accuracy(self):
-        f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(self.X_t)
+    def calculate_accuracy_test(self, X, Y):
+        f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(X)
         t = (f_w3 == f_w3.max(axis=1, keepdims=1)).astype(float)
-        return np.sum(np.equal(t,self.Y_t).all(axis=1))/self.X_t.shape[0]
+        return np.sum(np.equal(t,Y).all(axis=1))/X.shape[0]
 
     def update_weights(self, grad_w1, grad_w2, grad_w3):
 
@@ -116,16 +116,26 @@ class NeuralNetwork:
 
     def train(self, epochs):
 
+        X = self.X.copy()
+        idx = np.arange(X.shape[0])
         for i in range(0, epochs):
+            np.random.shuffle(idx)
+            i=0
+            while(i+8):
+                if i+8 >= X.shape[0]:
+                    batch = X[idx[i: X.shape[0]]]
+                else:
+                    batch = X[idx[i, i+8]]
 
-            f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(self.X)
+                f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(batch)
 
-            loss = self.calculate_error(f_w3)
-            acc = self.calculate_accuracy()
+
+                grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, self.X, self.Y)
+
+                self.update_weights(grad_w1, grad_w2, grad_w3)
+
+
+            loss = self.calculate_error(f_w3, self.Y)
+            acc = self.calculate_accuracy(self.X_t, self.Y_t)
             print(loss)
             print(acc)
-
-            grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2)
-
-            self.update_weights(grad_w1, grad_w2, grad_w3)
-
