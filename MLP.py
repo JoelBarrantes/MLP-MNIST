@@ -5,7 +5,6 @@ from sklearn.datasets import fetch_mldata
 from sklearn.model_selection import train_test_split
 
 mnist = fetch_mldata('MNIST original')
-weights = sa
 train_img, test_img, train_lbl, test_lbl = train_test_split(mnist.data, mnist.target, test_size=1/7.0, random_state=0)
 
 variance = 1

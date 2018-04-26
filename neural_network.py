@@ -35,9 +35,6 @@ class NeuralNetwork:
         self.Y_t = one_hot.copy()
         self.t_labels = t_labels
 
-    def softmax_grad(self, softmax):
-        s = softmax.reshape(-1,1)
-        return np.diagflat(s) - np.dot(s, s.T)
 
     def softmax(self, x):
         exp_scores = np.exp(x-np.max(x))
@@ -116,21 +113,25 @@ class NeuralNetwork:
 
     def train(self, epochs):
 
-        X = self.X.copy()
-        idx = np.arange(X.shape[0])
+        idx = np.arange(self.X.shape[0])
         for i in range(0, epochs):
             np.random.shuffle(idx)
             i=0
-            while(i+8):
-                if i+8 >= X.shape[0]:
-                    batch = X[idx[i: X.shape[0]]]
+            exit_cond = False
+            while(True):
+                if i+8 >= self.X.shape[0]:
+                    exit_cond=True
+                    batch = self.X[idx[i:self.X.shape[0]]]
+                    batch_l = self.Y[idx[i:self.Y.shape[0]]]
                 else:
-                    batch = X[idx[i, i+8]]
+                    batch = self.X[idx[i:i+8]]
+                    batch_l = self.Y[idx[i:i+8]]
+
 
                 f_w1, f_w2, f_w3, d_w1, d_w2 = self.calculate_forward(batch)
 
 
-                grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, self.X, self.Y)
+                grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, batch, batch_l)
 
                 self.update_weights(grad_w1, grad_w2, grad_w3)
 
@@ -139,3 +140,5 @@ class NeuralNetwork:
             acc = self.calculate_accuracy(self.X_t, self.Y_t)
             print(loss)
             print(acc)
+            if exit_cond:
+                break
