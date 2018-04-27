@@ -9,11 +9,11 @@ train_img, test_img, train_lbl, test_lbl = train_test_split(mnist.data, mnist.ta
 
 
 dropout_p = 0.5
-two_layers = False
-red = NeuralNetwork(784, 100, 10, 10, 0.0085, train_img.T, train_lbl.T,test_img.T, test_lbl,two_layers )
+two_layers = True
+red = NeuralNetwork(784, 50, 30, 10, 0.0085, two_layers )
+red.load_data(train_img.T, train_lbl.T,test_img.T, test_lbl)
+#red.train_all(10000, dropout_p)
 
-red.train_all(10000, dropout_p)
-
-#red.train_batch(10000, 32, dropout_h)
+red.train_batch(10000, 32, dropout_p)
 
 print("Here")

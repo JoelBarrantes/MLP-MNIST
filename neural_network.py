@@ -4,7 +4,7 @@ import time
 
 class NeuralNetwork:
 
-    def __init__(self,i_q, h1_q, h2_q, o_q, alpha, train_data, labels, test_data, t_labels, layers):
+    def __init__(self,i_q, h1_q, h2_q, o_q, alpha, layers):
 
         self.two_layers = layers
         self.num_inputs = i_q
@@ -14,13 +14,20 @@ class NeuralNetwork:
 
         self.alpha = alpha
 
-        self.W1 = np.random.uniform(-1, 1,(self.num_inputs, self.num_hidden1))
+        mu = 0
+        sigma = 0.01
 
-        self.W2 = np.random.uniform(-1, 1,(self.num_hidden1, self.num_hidden2))
+        self.W1 = np.random.normal(mu, sigma,(self.num_inputs, self.num_hidden1))
         if self.two_layers:
-            self.W3 = np.random.uniform(-1, 1,(self.num_hidden2,self.num_outputs))
+            self.W2 = np.random.normal(mu, sigma,(self.num_hidden1, self.num_hidden2))
+            self.W3 = np.random.normal(mu, sigma,(self.num_hidden2,self.num_outputs))
         else:
-            self.W3 = np.random.uniform(-1, 1,(self.num_hidden1,self.num_outputs))
+            self.W2 = np.zeros(1)
+            self.W3 = np.random.normal(mu, sigma,(self.num_hidden1,self.num_outputs))
+
+        self.date = time.strftime("%Y.%m.%d-%H.%M.%S")
+
+    def load_data(self, train_data, labels, test_data, t_labels,):
 
         self.X = train_data.transpose()
         self.X = self.X / np.max(self.X)
@@ -29,14 +36,21 @@ class NeuralNetwork:
         self.Y = one_hot.copy()
         self.labels = labels
 
-        self.date = time.strftime("%Y.%m.%d-%H.%M.%S")
-
         self.X_t = test_data.transpose()
         self.X_t = self.X_t / np.max(self.X_t)
         one_hot = np.zeros((t_labels.size, self.num_outputs))
         one_hot[np.arange(t_labels.size),t_labels.astype(int)] = 1
         self.Y_t = one_hot.copy()
         self.t_labels = t_labels
+
+    def load_Ws(self, w1, w2, w3):
+        self.W1 = w1
+        self.W2 = w2
+        self.W3 = w3
+
+    def softmax_single(self, sample):
+        exp_scores = np.exp(sample-np.max(sample))
+        return exp_scores/np.sum(exp_scores)
 
     def softmax(self, x):
         exp_scores = np.exp(x-np.max(x))
@@ -50,20 +64,13 @@ class NeuralNetwork:
         return f_x, d_x
 
     def saveWs(self,W1,W2,W3):
-
         date = self.date
-        np.savetxt("./File/W1_" + str(self.num_inputs) + "_" + str(self.num_hidden1) + "_" + date
-                   +".txt",
-                   W1,
-                   fmt = '%10.2f')
-        np.savetxt("./File/W2_" + str(self.num_hidden1) + "_" + str(self.num_hidden2) + "_" + date
-                   + ".txt",
-                   W1,
-                   fmt = '%10.2f')
-        np.savetxt("./File/W3_" + str(self.num_hidden2) + "_" + str(self.num_outputs) + "_" + date
-                   +".txt",
-                   W1,
-                   fmt = '%10.2f')
+        np.save("./File/W1_" + str(self.num_inputs) + "_" + str(self.num_hidden1) + "_" + date, W1)
+        if self.two_layers:
+            np.save("./File/W2_" + str(self.num_hidden1) + "_" + str(self.num_hidden2) + "_" + date, W2)
+            np.save("./File/W3_" + str(self.num_hidden2) + "_" + str(self.num_outputs) + "_" + date, W3)
+        else:
+            np.save("./File/W3_" + str(self.num_hidden1) + "_" + str(self.num_outputs) + "_" + date, W3)
 
     def cross_entropy(self, f_w3, Y):
         loss = 1/f_w3.shape[0] * -np.sum((Y * np.log(f_w3)))
@@ -207,3 +214,19 @@ class NeuralNetwork:
             print("Loss", loss)
             print("Accuracy: ", acc)
             print("Duration: ", end - start)
+
+
+    def test_image(self, sample):
+        sample = sample/sample.max()
+        w1 = np.dot(sample, self.W1)
+        f_w1, _ = self.ReLU(w1)
+        if self.two_layers:
+            w2 = np.dot(f_w1, self.W2)
+            f_w2, _ = self.ReLU(w2)
+        else:
+            f_w2 = f_w1
+        w3 = np.dot(f_w2, self.W3)
+        f_w3 = self.softmax_single(w3)
+        return np.argmax(f_w3)
+
+
