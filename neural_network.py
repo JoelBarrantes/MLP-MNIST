@@ -117,9 +117,11 @@ class NeuralNetwork:
 
 
         else:
-            d_w2 = d_w2 * mh2
-            deltaz2 = deltaf_w3 * d_w2
-            grad_w1 = np.dot(X.T, deltaz2)/ size
+
+            d_w1 = d_w1 * mh1
+            deltaz1 = deltaf_w3 * d_w1
+
+            grad_w1 = np.dot(X.T, deltaz1)/ size
             grad_w2 = grad_w1
             grad_w3 = np.dot(f_w2.T, deltaz3)/ size
 
@@ -195,11 +197,6 @@ class NeuralNetwork:
             acc = self.calculate_accuracy_test(self.X_t, self.Y_t)
 
             grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, self.X, self.Y, mh1, mh2)
-
-            #DROPOUT THE GRADIENTS
-            grad_w1 = grad_w1 * mi
-            grad_w2 = grad_w2 * mh1
-            grad_w3 = grad_w3 * mh2
 
             self.update_weights(grad_w1, grad_w2, grad_w3)
 
