@@ -73,7 +73,9 @@ class NeuralNetwork:
             np.save("./File/W3_" + str(self.num_hidden1) + "_" + str(self.num_outputs) + "_" + date, W3)
 
     def cross_entropy(self, f_w3, Y):
-        loss = 1/f_w3.shape[0] * -np.sum((Y * np.log(f_w3)))
+        i = range(0,f_w3.shape[0])
+        L_i = -np.log(f_w3[i,Y.astype(int)[i]])
+        loss = 1/L_i.shape[0] * np.sum(L_i)
         return loss
 
     def calculate_forward(self, X, p_h):
@@ -155,6 +157,7 @@ class NeuralNetwork:
 
         idx = np.arange(self.X.shape[0])
         for j in range(0, epochs):
+            print("--------------------------")
             start = time.time()
             np.random.shuffle(idx)
             i=0
@@ -162,17 +165,30 @@ class NeuralNetwork:
             num_batches = 0
             exit_cond = False
             while True:
+
                 if i+batch_size >= self.X.shape[0]:
                     exit_cond = True
                     batch = self.X[idx[i:self.X.shape[0]]]
                     batch_l = self.Y[idx[i:self.Y.shape[0]]]
+                    batch_t = self.labels[idx[i:self.labels.shape[0]]]
                 else:
                     batch = self.X[idx[i:i+batch_size]]
                     batch_l = self.Y[idx[i:i+batch_size]]
+                    batch_t = self.labels[idx[i:i+batch_size]]
+
+                if num_batches%5 == 0 and num_batches != 0:
+                    self.calculate_accuracy_test(batch, batch_l)
 
                 f_w1, f_w2, f_w3, d_w1, d_w2, mh1, mh2 = self.calculate_forward(batch, p_h)
-                loss = self.calculate_error(f_w3, batch_l)
-                Loss += loss
+
+
+                loss = self.calculate_error(f_w3, batch_t)
+
+                #print("Batch "+str(i)+ " loss: "+str(loss))
+                if not math.isnan(loss):
+                    Loss += loss
+                else:
+                    pass
                 grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, batch, batch_l, mh1, mh2)
 
                 self.update_weights(grad_w1, grad_w2, grad_w3)
@@ -187,10 +203,10 @@ class NeuralNetwork:
             acc = self.calculate_accuracy_test(self.X_t, self.Y_t)
             end = time.time()
 
-
+            #print()
             print("Epoch: ", j)
             print("Loss", Loss/num_batches)
-            print("Accuracy: ", acc)
+            print("Test set accuracy: ", acc)
             print("Duration: ", end - start)
 
 
