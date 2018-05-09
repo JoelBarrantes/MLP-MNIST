@@ -4,8 +4,10 @@ import time
 
 class NeuralNetwork:
 
-    def __init__(self,i_q, h1_q, h2_q, o_q, alpha, layers):
+    def __init__(self,i_q, h1_q, h2_q, o_q, alpha, layers, act_f):
 
+        self.log = True
+        self.act_f = act_f
         self.two_layers = layers
         self.num_inputs = i_q
         self.num_hidden1 = h1_q
@@ -26,6 +28,9 @@ class NeuralNetwork:
             self.W3 = np.random.normal(mu, sigma,(self.num_hidden1,self.num_outputs))
 
         self.date = time.strftime("%Y.%m.%d-%H.%M.%S")
+
+    def no_log(self):
+        self.log = False
 
     def load_data(self, train_data, labels, test_data, t_labels,):
 
@@ -63,6 +68,10 @@ class NeuralNetwork:
         d_x[d_x>0] = 1
         return f_x, d_x
 
+    def sigmoid(self, x):
+        sig = 1/(1+np.exp(-x))
+        return sig, sig *(1-sig)
+
     def saveWs(self,W1,W2,W3):
         date = self.date
         np.save("./File/W1_" + str(self.num_inputs) + "_" + str(self.num_hidden1) + "_" + date, W1)
@@ -78,10 +87,16 @@ class NeuralNetwork:
         loss = 1/L_i.shape[0] * np.sum(L_i)
         return loss
 
+    def activation_function(self, X):
+        if self.act_f == 0:
+            return self.ReLU(X)
+        if self.act_f == 1:
+            return self.sigmoid(X)
+
     def calculate_forward(self, X, p_h):
 
         w1 = np.dot(X, self.W1)
-        f_w1, d_w1 = self.ReLU(w1)
+        f_w1, d_w1 = self.activation_function(w1)
 
         #DROPOUT HIDDEN LAYER 1
         mask_h1 = np.random.binomial(size=f_w1.shape[1], n=1, p=p_h)/p_h
@@ -89,7 +104,7 @@ class NeuralNetwork:
 
         if self.two_layers:
             w2 = np.dot(f_w1, self.W2)
-            f_w2, d_w2 = self.ReLU(w2)
+            f_w2, d_w2 = self.activation_function(w2)
 
             #DROPOUT HIDDEN LAYER 2
             mask_h2 = np.random.binomial(size=f_w2.shape[1], n=1, p=p_h)/p_h
@@ -198,8 +213,8 @@ class NeuralNetwork:
                 batch_l=None
                 if exit_cond:
                     break
-
-            self.saveWs(self.W1, self.W2, self.W3)
+            if self.log:
+                self.saveWs(self.W1, self.W2, self.W3)
             acc = self.calculate_accuracy_test(self.X_t, self.Y_t)
             end = time.time()
 
@@ -222,9 +237,8 @@ class NeuralNetwork:
             grad_w1, grad_w2, grad_w3 = self.calculate_backward(f_w1,f_w2, f_w3, d_w1, d_w2, self.X, self.Y, mh1, mh2)
 
             self.update_weights(grad_w1, grad_w2, grad_w3)
-
-            self.saveWs(self.W1, self.W2, self.W3)
-
+            if self.log:
+                self.saveWs(self.W1, self.W2, self.W3)
             end = time.time()
             print("Epoch: ", j)
             print("Loss", loss)
@@ -232,17 +246,23 @@ class NeuralNetwork:
             print("Duration: ", end - start)
 
 
-    def test_image(self, sample):
+    def test_image(self, sample, f_act):
+        self.act_f = f_act
         sample = sample/sample.max()
         w1 = np.dot(sample, self.W1)
-        f_w1, _ = self.ReLU(w1)
+        f_w1, _ = self.activation_function(w1)
         if self.two_layers:
             w2 = np.dot(f_w1, self.W2)
-            f_w2, _ = self.ReLU(w2)
+            f_w2, _ = self.activation_function(w2)
         else:
             f_w2 = f_w1
         w3 = np.dot(f_w2, self.W3)
         f_w3 = self.softmax_single(w3)
-        return np.argmax(f_w3)
+        t_1 = np.argmax(f_w3)
+        f_w3[t_1] = 0
+        t_2 = np.argmax(f_w3)
+        f_w3[t_2] = 0
+        t_3 = np.argmax(f_w3)
+        return t_1, t_2, t_3
 
 
