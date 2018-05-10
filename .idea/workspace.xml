@@ -2,11 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d6177f8-2c33-49c7-83d4-7f78e1089e36" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mnist_draw.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 1.png" afterPath="$PROJECT_DIR$/images/neuron 1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 10.png" afterPath="$PROJECT_DIR$/images/neuron 10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 100.png" afterPath="$PROJECT_DIR$/images/neuron 100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 11.png" afterPath="$PROJECT_DIR$/images/neuron 11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 12.png" afterPath="$PROJECT_DIR$/images/neuron 12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 13.png" afterPath="$PROJECT_DIR$/images/neuron 13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 14.png" afterPath="$PROJECT_DIR$/images/neuron 14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 15.png" afterPath="$PROJECT_DIR$/images/neuron 15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 16.png" afterPath="$PROJECT_DIR$/images/neuron 16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 17.png" afterPath="$PROJECT_DIR$/images/neuron 17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 18.png" afterPath="$PROJECT_DIR$/images/neuron 18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 19.png" afterPath="$PROJECT_DIR$/images/neuron 19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 2.png" afterPath="$PROJECT_DIR$/images/neuron 2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 20.png" afterPath="$PROJECT_DIR$/images/neuron 20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 21.png" afterPath="$PROJECT_DIR$/images/neuron 21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 22.png" afterPath="$PROJECT_DIR$/images/neuron 22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 23.png" afterPath="$PROJECT_DIR$/images/neuron 23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 24.png" afterPath="$PROJECT_DIR$/images/neuron 24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 25.png" afterPath="$PROJECT_DIR$/images/neuron 25.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 26.png" afterPath="$PROJECT_DIR$/images/neuron 26.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 27.png" afterPath="$PROJECT_DIR$/images/neuron 27.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 28.png" afterPath="$PROJECT_DIR$/images/neuron 28.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 29.png" afterPath="$PROJECT_DIR$/images/neuron 29.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 3.png" afterPath="$PROJECT_DIR$/images/neuron 3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 30.png" afterPath="$PROJECT_DIR$/images/neuron 30.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 31.png" afterPath="$PROJECT_DIR$/images/neuron 31.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 32.png" afterPath="$PROJECT_DIR$/images/neuron 32.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 33.png" afterPath="$PROJECT_DIR$/images/neuron 33.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 34.png" afterPath="$PROJECT_DIR$/images/neuron 34.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 35.png" afterPath="$PROJECT_DIR$/images/neuron 35.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 36.png" afterPath="$PROJECT_DIR$/images/neuron 36.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 37.png" afterPath="$PROJECT_DIR$/images/neuron 37.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 38.png" afterPath="$PROJECT_DIR$/images/neuron 38.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 39.png" afterPath="$PROJECT_DIR$/images/neuron 39.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 4.png" afterPath="$PROJECT_DIR$/images/neuron 4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 40.png" afterPath="$PROJECT_DIR$/images/neuron 40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 41.png" afterPath="$PROJECT_DIR$/images/neuron 41.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 42.png" afterPath="$PROJECT_DIR$/images/neuron 42.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 43.png" afterPath="$PROJECT_DIR$/images/neuron 43.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 44.png" afterPath="$PROJECT_DIR$/images/neuron 44.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 45.png" afterPath="$PROJECT_DIR$/images/neuron 45.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 46.png" afterPath="$PROJECT_DIR$/images/neuron 46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 47.png" afterPath="$PROJECT_DIR$/images/neuron 47.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 48.png" afterPath="$PROJECT_DIR$/images/neuron 48.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 49.png" afterPath="$PROJECT_DIR$/images/neuron 49.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 5.png" afterPath="$PROJECT_DIR$/images/neuron 5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 50.png" afterPath="$PROJECT_DIR$/images/neuron 50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 51.png" afterPath="$PROJECT_DIR$/images/neuron 51.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 52.png" afterPath="$PROJECT_DIR$/images/neuron 52.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 53.png" afterPath="$PROJECT_DIR$/images/neuron 53.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 54.png" afterPath="$PROJECT_DIR$/images/neuron 54.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 55.png" afterPath="$PROJECT_DIR$/images/neuron 55.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 56.png" afterPath="$PROJECT_DIR$/images/neuron 56.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 57.png" afterPath="$PROJECT_DIR$/images/neuron 57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 58.png" afterPath="$PROJECT_DIR$/images/neuron 58.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 59.png" afterPath="$PROJECT_DIR$/images/neuron 59.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 6.png" afterPath="$PROJECT_DIR$/images/neuron 6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 60.png" afterPath="$PROJECT_DIR$/images/neuron 60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 61.png" afterPath="$PROJECT_DIR$/images/neuron 61.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 62.png" afterPath="$PROJECT_DIR$/images/neuron 62.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 63.png" afterPath="$PROJECT_DIR$/images/neuron 63.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 64.png" afterPath="$PROJECT_DIR$/images/neuron 64.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 65.png" afterPath="$PROJECT_DIR$/images/neuron 65.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 66.png" afterPath="$PROJECT_DIR$/images/neuron 66.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 67.png" afterPath="$PROJECT_DIR$/images/neuron 67.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 68.png" afterPath="$PROJECT_DIR$/images/neuron 68.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 69.png" afterPath="$PROJECT_DIR$/images/neuron 69.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 7.png" afterPath="$PROJECT_DIR$/images/neuron 7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 70.png" afterPath="$PROJECT_DIR$/images/neuron 70.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 71.png" afterPath="$PROJECT_DIR$/images/neuron 71.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 72.png" afterPath="$PROJECT_DIR$/images/neuron 72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 73.png" afterPath="$PROJECT_DIR$/images/neuron 73.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 74.png" afterPath="$PROJECT_DIR$/images/neuron 74.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 75.png" afterPath="$PROJECT_DIR$/images/neuron 75.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 76.png" afterPath="$PROJECT_DIR$/images/neuron 76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 77.png" afterPath="$PROJECT_DIR$/images/neuron 77.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 78.png" afterPath="$PROJECT_DIR$/images/neuron 78.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 79.png" afterPath="$PROJECT_DIR$/images/neuron 79.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 8.png" afterPath="$PROJECT_DIR$/images/neuron 8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 80.png" afterPath="$PROJECT_DIR$/images/neuron 80.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 81.png" afterPath="$PROJECT_DIR$/images/neuron 81.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 82.png" afterPath="$PROJECT_DIR$/images/neuron 82.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 83.png" afterPath="$PROJECT_DIR$/images/neuron 83.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 84.png" afterPath="$PROJECT_DIR$/images/neuron 84.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 85.png" afterPath="$PROJECT_DIR$/images/neuron 85.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 86.png" afterPath="$PROJECT_DIR$/images/neuron 86.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 87.png" afterPath="$PROJECT_DIR$/images/neuron 87.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 88.png" afterPath="$PROJECT_DIR$/images/neuron 88.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 89.png" afterPath="$PROJECT_DIR$/images/neuron 89.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 9.png" afterPath="$PROJECT_DIR$/images/neuron 9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 90.png" afterPath="$PROJECT_DIR$/images/neuron 90.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 91.png" afterPath="$PROJECT_DIR$/images/neuron 91.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 92.png" afterPath="$PROJECT_DIR$/images/neuron 92.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 93.png" afterPath="$PROJECT_DIR$/images/neuron 93.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 94.png" afterPath="$PROJECT_DIR$/images/neuron 94.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 95.png" afterPath="$PROJECT_DIR$/images/neuron 95.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 96.png" afterPath="$PROJECT_DIR$/images/neuron 96.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 97.png" afterPath="$PROJECT_DIR$/images/neuron 97.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 98.png" afterPath="$PROJECT_DIR$/images/neuron 98.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/neuron 99.png" afterPath="$PROJECT_DIR$/images/neuron 99.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MLP-MNIST.iml" afterPath="$PROJECT_DIR$/.idea/MLP-MNIST.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI.py" afterPath="$PROJECT_DIR$/GUI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MLP.py" afterPath="$PROJECT_DIR$/MLP.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mnist_draw.py" afterPath="$PROJECT_DIR$/mnist_draw.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural_network.py" afterPath="$PROJECT_DIR$/neural_network.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +120,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/neural_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="251" column="16" lean-forward="false" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="16" />
+            <state relative-caret-position="344">
+              <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -30,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MLP.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MLP.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -42,14 +144,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mnist_draw.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mnist_draw.py">
+      <file leaf-file-name="32_16_10.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/32_16_10.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-5607">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,20 +157,18 @@
       <file leaf-file-name="GUI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" column="63" lean-forward="false" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pilutil.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python364/Lib/site-packages/scipy/misc/pilutil.py">
+      <file leaf-file-name="mnist_draw.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mnist_draw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3255">
-              <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -98,6 +196,7 @@
       <find>sigmoid</find>
       <find>ReLU</find>
       <find>saveWs</find>
+      <find>self.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,15 +206,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GUI_train.py" />
-        <option value="$PROJECT_DIR$/neural_network.py" />
-        <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/mnist_drawer.py" />
-        <option value="$PROJECT_DIR$/mnist_draw.py" />
+        <option value="$PROJECT_DIR$/GUI.py" />
         <option value="$PROJECT_DIR$/MLP.py" />
+        <option value="$PROJECT_DIR$/mnist_draw.py" />
+        <option value="$PROJECT_DIR$/neural_network.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1047" />
     <option name="height" value="1038" />
@@ -135,6 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,11 +246,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Progra-1-semestre-1-2018" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -242,8 +342,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.MLP" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mnist_draw" />
-        <item index="2" class="java.lang.String" itemvalue="Python.neural_network" />
+        <item index="1" class="java.lang.String" itemvalue="Python.neural_network" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mnist_draw" />
       </list>
     </recent_temporary>
   </component>
@@ -251,12 +351,12 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1482277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19602577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991276" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -278,53 +378,88 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GUI.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GUI.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/neural_network.py</url>
-          <line>205</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/neural_network.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/neural_network.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mnist_draw.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mnist_draw.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="22" />
+          <line>60</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-      <option name="time" value="23" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mnist_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5229">
+          <caret line="251" column="16" lean-forward="false" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python364/Lib/site-packages/scipy/misc/pilutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3255">
+          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neural_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5187">
@@ -339,9 +474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -349,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3255">
           <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -387,9 +519,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -407,9 +537,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -447,9 +575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,9 +610,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -521,9 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,9 +680,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,36 +712,97 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI_train.py" />
-    <entry file="file://$PROJECT_DIR$/GUI.py">
+    <entry file="file://C:/python364/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="434">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/python364/Lib/site-packages/scipy/misc/pilutil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3255">
+        <state relative-caret-position="814">
           <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/python364/Lib/codecs.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/warnings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="172">
+          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/scipy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/sre_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="288" column="0" lean-forward="false" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="668" column="0" lean-forward="false" selection-start-line="668" selection-start-column="0" selection-end-line="668" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/ctypes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/sklearn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mnist_draw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        <state relative-caret-position="168">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="63" lean-forward="false" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/32_16_10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5607">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -630,18 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/neural_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="251" column="16" lean-forward="false" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MLP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="344">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

@@ -18,7 +18,6 @@ def classify(image_path):
     if ready:
         image = misc.imread(image_path, flatten=True)
         image = image.flatten()
-        print(f_act.get())
         t_1, t_2, t_3 = Red.test_image(image, f_act.get())
         messagebox.showinfo("Result", "The class of the image is "+str(t_1)+"\nAlso possible: "+str(t_2)+", "+str(t_3))
     else:

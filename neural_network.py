@@ -58,7 +58,8 @@ class NeuralNetwork:
         return exp_scores/np.sum(exp_scores)
 
     def softmax(self, x):
-        exp_scores = np.exp(x-np.max(x))
+        max_per_row = np.reshape(np.max(x, axis=1), (x.shape[0], 1))
+        exp_scores = np.exp(x - max_per_row)
         probs = exp_scores / np.sum(exp_scores, axis=1, keepdims=True)
         return probs
 
@@ -161,9 +162,11 @@ class NeuralNetwork:
 
     def update_weights(self, grad_w1, grad_w2, grad_w3):
 
+
         self.W1 = self.W1 - self.alpha * grad_w1
 
         if self.two_layers:
+
             self.W2 = self.W2 - self.alpha * grad_w2
 
         self.W3 = self.W3 - self.alpha * grad_w3
