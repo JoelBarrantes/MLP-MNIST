@@ -11,9 +11,9 @@ train_img, test_img, train_lbl, test_lbl = train_test_split(mnist.data, mnist.ta
 #1 Sigmoid
 f_activation = 0
 
-dropout_p = 0.5
-two_layers = True
-red = NeuralNetwork(784, 32, 16, 10, 0.0085, two_layers, f_activation )
+dropout_p = 0.25
+two_layers = False
+red = NeuralNetwork(784, 128, 32, 10, 0.0085, two_layers, f_activation )
 
 
 red.load_data(train_img.T, train_lbl.T,test_img.T, test_lbl)
@@ -27,4 +27,4 @@ w3 = np.load("./File/W3_16_10_2018.05.09-20.24.51.npy")
 #red.load_Ws(w1,w2,w3)
 #red.no_log()
 
-red.train_batch(500, 32, dropout_p)
+red.train_batch(100, 32, dropout_p)
